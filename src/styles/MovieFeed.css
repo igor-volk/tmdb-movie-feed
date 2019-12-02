@@ -1,0 +1,49 @@
+.movie-feed {
+    width: 100%;
+}
+
+.filters {
+    background-color: #fa7775;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filters > .select-container {
+    margin-left: 20px;
+    width: 35%;
+    min-width: 150px;
+}
+
+.filters > label {
+    margin-left: 20px;
+}
+
+.filters > .rating {
+    padding-left: 20px
+}
+
+.movie-container {
+    overflow-y: scroll;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));/* this will ensure the number of columns to fit the available width */
+}
+
+.movie {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie > .title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+}
